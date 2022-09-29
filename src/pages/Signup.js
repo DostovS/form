@@ -64,7 +64,7 @@ function Signup() {
         <p>
           Already have an account? <Link to="/log-in">Log In</Link>
         </p>
-        <div className="formItem">
+        <div className="formItem mb-2">
           <label htmlFor="email">E-mail</label>
           <input
             type="email"
@@ -73,7 +73,7 @@ function Signup() {
             ref={inputUsername}
           />
         </div>
-        <div className="formItem">
+        <div className="formItem mb-2">
           <label htmlFor="password">Password</label>
           <input
             className="form-control"
