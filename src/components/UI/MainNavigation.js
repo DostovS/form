@@ -3,6 +3,11 @@ import classes from "./MainNavigation.modules.css";
 
 
 function MainNavigation() {
+  function LogOut(){
+    localStorage.removeItem("token");
+    localStorage.removeItem("currentUser");
+    window.location.href = "/log-in";
+  }
   return (
     <div>
       <nav className={classes.nav}>
@@ -17,7 +22,7 @@ function MainNavigation() {
             <Link to="/sign-up">SignIn</Link>
           </li>
           <li className="nav-item">
-            <Link to='/log-in' className="btn btn-danger">Log Out</Link>
+            <button className="btn btn-danger" onClick={LogOut}>Log Out</button>
           </li>
         </ul>
       </nav>
