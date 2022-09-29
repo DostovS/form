@@ -4,7 +4,7 @@ import axios from "axios";
 //     return  token;
 // }
 
-axios.defaults.baseURL = "https://auth-app-itransition.herokuapp.com/";
+axios.defaults.baseURL = "https://auth-app-itransition.netlify.app/";
 // axios.interceptors.request.use(async(config) =>{
 //     console.log(getToken());
 //     // const token =
